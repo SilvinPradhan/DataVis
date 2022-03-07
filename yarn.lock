@@ -1745,7 +1745,7 @@
     "@types/estree" "*"
     "@types/json-schema" "*"
 
-"@types/estree@*":
+"@types/estree@*", "@types/estree@^0.0.50":
   version "0.0.50"
   resolved "https://registry.npmjs.org/@types/estree/-/estree-0.0.50.tgz"
   integrity sha512-C6N5s2ZFtuZRj54k2/zyRhNDjJwwcViAM3Nbm8zjBpbqAdZ00mr0CFxvSKeO8Y/e03WVFLpQMdHYVfUd6SB+Hw==
@@ -11340,11 +11340,24 @@ vega-event-selector@^2.0.6, vega-event-selector@~2.0.6:
   resolved "https://registry.npmjs.org/vega-event-selector/-/vega-event-selector-2.0.6.tgz"
   integrity sha512-UwCu50Sqd8kNZ1X/XgiAY+QAyQUmGFAwyDu7y0T5fs6/TPQnDo/Bo346NgSgINBEhEKOAMY1Nd/rPOk4UEm/ew==
 
+vega-event-selector@~3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/vega-event-selector/-/vega-event-selector-3.0.0.tgz#7b855ac0c3ddb59bc5b5caa0d96dbbc9fbd33a4c"
+  integrity sha512-Gls93/+7tEJGE3kUuUnxrBIxtvaNeF01VIFB2Q2Of2hBIBvtHX74jcAdDtkh5UhhoYGD8Q1J30P5cqEBEwtPoQ==
+
 vega-expression@^4.0.1, vega-expression@~4.0.1:
   version "4.0.1"
   resolved "https://registry.npmjs.org/vega-expression/-/vega-expression-4.0.1.tgz"
   integrity sha512-ZrDj0hP8NmrCpdLFf7Rd/xMUHGoSYsAOTaYp7uXZ2dkEH5x0uPy5laECMc8TiQvL8W+8IrN2HAWCMRthTSRe2Q==
   dependencies:
+    vega-util "^1.16.0"
+
+vega-expression@~5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/vega-expression/-/vega-expression-5.0.0.tgz#938f26689693a1e0d26716030cdaed43ca7abdfb"
+  integrity sha512-y5+c2frq0tGwJ7vYXzZcfVcIRF/QGfhf2e+bV1Z0iQs+M2lI1II1GPDdmOcMKimpoCVp/D61KUJDIGE1DSmk2w==
+  dependencies:
+    "@types/estree" "^0.0.50"
     vega-util "^1.16.0"
 
 vega-force@~4.0.7:
@@ -11422,10 +11435,10 @@ vega-lite-api@5.0.0:
   resolved "https://registry.npmjs.org/vega-lite-api/-/vega-lite-api-5.0.0.tgz"
   integrity sha512-rjNLkfOuBG1KTpIgQpX81LlGiqEb92lHlGiIuofs/EgntFVxD1REW18YKLpYdb1Mm7166zIOqNMdpchwjhstbQ==
 
-vega-lite@5.1.1:
-  version "5.1.1"
-  resolved "https://registry.npmjs.org/vega-lite/-/vega-lite-5.1.1.tgz"
-  integrity sha512-V085gNkbgbmcVC/Q3dJjmIioxcDicxMHvH0FIKOPxdplzt+qU9xGIhQy7scj0tSMYnmAPCayB5oLkkQXFb6w1w==
+vega-lite@5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/vega-lite/-/vega-lite-5.2.0.tgz#bc3c5c70a38d9de8f3fb9644c7dd52f3b9f47a1b"
+  integrity sha512-Yxcg8MvYfxHcG6BbkaKT0oVCIMIcE19UvqIsEwBmyd/7h2nzW7oRnID81T8UrY7hpDrIr6wa2JADOT2dhGNErw==
   dependencies:
     "@types/clone" "~2.1.1"
     array-flat-polyfill "^1.0.1"
@@ -11434,10 +11447,10 @@ vega-lite@5.1.1:
     fast-json-stable-stringify "~2.1.0"
     json-stringify-pretty-compact "~3.0.0"
     tslib "~2.3.1"
-    vega-event-selector "~2.0.6"
-    vega-expression "~4.0.1"
-    vega-util "~1.16.1"
-    yargs "~17.1.1"
+    vega-event-selector "~3.0.0"
+    vega-expression "~5.0.0"
+    vega-util "~1.17.0"
+    yargs "~17.2.1"
 
 vega-loader@^4.3.2, vega-loader@^4.3.3, vega-loader@~4.4.0:
   version "4.4.0"
@@ -11580,6 +11593,11 @@ vega-util@^1.15.2, vega-util@^1.16.0, vega-util@^1.16.1, vega-util@~1.16.1:
   version "1.16.1"
   resolved "https://registry.npmjs.org/vega-util/-/vega-util-1.16.1.tgz"
   integrity sha512-FdgD72fmZMPJE99FxvFXth0IL4BbLA93WmBg/lvcJmfkK4Uf90WIlvGwaIUdSePIsdpkZjBPyQcHMQ8OcS8Smg==
+
+vega-util@~1.17.0:
+  version "1.17.0"
+  resolved "https://registry.yarnpkg.com/vega-util/-/vega-util-1.17.0.tgz#b72ae0baa97f943bf591f8f5bb27ceadf06834ac"
+  integrity sha512-HTaydZd9De3yf+8jH66zL4dXJ1d1p5OIFyoBzFiOli4IJbwkL1jrefCKz6AHDm1kYBzDJ0X4bN+CzZSCTvNk1w==
 
 vega-view-transforms@~4.5.8:
   version "4.5.8"
@@ -12223,10 +12241,10 @@ yargs@^15.4.1:
     y18n "^4.0.0"
     yargs-parser "^18.1.2"
 
-yargs@~17.1.1:
-  version "17.1.1"
-  resolved "https://registry.npmjs.org/yargs/-/yargs-17.1.1.tgz"
-  integrity sha512-c2k48R0PwKIqKhPMWjeiF6y2xY/gPMUlro0sgxqXpbOIohWiLNXWslsootttv7E1e73QPAMQSg5FeySbVcpsPQ==
+yargs@~17.2.1:
+  version "17.2.1"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.2.1.tgz#e2c95b9796a0e1f7f3bf4427863b42e0418191ea"
+  integrity sha512-XfR8du6ua4K6uLGm5S6fA+FIJom/MdJcFNVY8geLlp2v8GYbOXD4EB1tPNZsRn4vBzKGMgb5DRZMeWuFc2GO8Q==
   dependencies:
     cliui "^7.0.2"
     escalade "^3.1.1"
